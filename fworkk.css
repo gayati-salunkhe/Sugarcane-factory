@@ -1,0 +1,98 @@
+/* Reset margin and padding for a clean slate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall background styles */
+body {
+    background-image:linear-gradient(rgba(0,45,0,0.8),rgba(0,45,0,0.8)),url(usachapic.jpg); 
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main container styling */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Welcome message styling */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #007bff; /* Blue color */
+    margin-bottom: 20px;
+}
+
+/* Links section styling */
+.links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Make all links the same size */
+.links a {
+    display: inline-block;
+    width: 250px;  /* Fixed width */
+    height: 50px;  /* Fixed height */
+    margin: 10px;
+    padding: 10px;
+    background-color: #007bff; /* Button color */
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    text-align: center; /* Center text */
+    line-height: 30px; /* Vertically center text */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+/* Glowing effect on hover */
+.links a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.8); /* Glowing blue effect */
+    border: 2px solid #007bff; /* Glowing border */
+}
+
+/* Card styling for the sugar factory info */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Card headers */
+.card h3,
+.card h4 {
+    color: #007bff; /* Blue color for headers */
+}
+
+/* Paragraphs inside the cards */
+.card p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .links a {
+        width: 100%;  /* Full width for mobile screens */
+        padding: 15px;
+        margin: 5px 0;
+    }
+}

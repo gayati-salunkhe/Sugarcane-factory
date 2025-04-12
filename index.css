@@ -1,0 +1,106 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3 Jan, 2025, 6:51:11 PM
+    Author     : HP
+*/
+
+ 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: #3b5998;
+            padding: 0.1rem;
+            color: white;
+        }
+
+        .navbar h2 {
+            color: #fff;
+            font-size: 1.8rem;
+            margin: 0;
+            text-align: center;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            margin-top: 1rem;
+        }
+
+        .nav-links li {
+            margin: 0 1rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+            color: #f1f1f1;
+        }
+
+        /* Hero section styling */
+        .hero-section {
+            height: 100vh;
+            background: url("kaman.jpg") no-repeat center center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 3s ease-out;
+        }
+
+        /* Hero text with animation */
+        .hero-section h1 {
+            font-size: 3rem;
+            animation: slideIn 1.5s ease-in-out;
+        }
+     
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+     
+
+        

@@ -1,0 +1,133 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    
+    background-image:linear-gradient(rgba(0,45,0,0.8),rgba(0,45,0,0.8)),url(usachapic.jpg); 
+    background-size: cover; 
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Form row styles */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Form group for each input */
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: calc(50% - 10px); /* 2 inputs per row */
+}
+
+/* Label styles */
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    width: 120px; /* Fixed width for labels */
+}
+
+/* Input styles */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus effect */
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Input field icon */
+.form-group i {
+    color: #007bff;
+}
+
+/* Button styling */
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 90%;
+    width: 400px;
+}
+
+/* Button hover effect */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    
+}
+
+/* Ensure that the form looks good on small screens */
+@media screen and (max-width: 768px) {
+    .form-group {
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    label {
+        width: auto;
+    }
+}
+

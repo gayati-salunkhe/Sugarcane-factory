@@ -1,0 +1,78 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 4 Jan, 2025, 6:54:48 PM
+    Author     : HP
+*/
+
+ body {
+             background-image:linear-gradient(rgba(0,45,0,0.8),rgba(0,45,0,0.8)),url(usachapic.jpg);
+             background-size: cover;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .container {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff236;
+            font-size: 3rem;
+            font-weight: bold;
+            animation: fadeIn 2s ease-out;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555;
+            animation: fadeIn 2.5s ease-out;
+        }
+
+        .links a {
+            font-size: 1.1rem;
+            margin: 15px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .links a:hover {
+            background-color: #28a745;
+        }
+
+        .card {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 60px;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .btn-custom {
+            font-size: 1.1rem;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #28a745;
+        }
+
+        /* Animation for fade-in effect */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }

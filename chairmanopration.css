@@ -1,0 +1,101 @@
+/* Reset margin and padding for a clean slate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall background styles */
+body {
+    background-image:linear-gradient(rgba(0,45,0,0.8),rgba(0,45,0,0.8)),url(usachapic.jpg); 
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main container styling */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    color: #d9ba09;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Style for the buttons container */
+.buttons-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Link (button) styles */
+.buttons-container a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Blue color */
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+/* Glowing effect on button hover */
+.buttons-container a:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8); /* Glowing blue effect */
+    border: 2px solid #007BFF; /* Border to match button color */
+}
+
+/* Information section styling */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Info box styling */
+.info-box {
+    width: 48%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Info box title styling */
+.info-box h3 {
+    color: #0056b3;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Paragraph inside info box */
+.info-box p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .info-section {
+        flex-direction: column;
+    }
+
+    .info-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

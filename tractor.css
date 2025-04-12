@@ -1,0 +1,105 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15 Jan, 2025, 9:59:07 AM
+    Author     : HP
+*/
+
+   /* General styling */
+        body {
+            background-image:linear-gradient(rgba(0,45,0,0.3),rgba(0,45,0,0.3)),url(harvesting.jpg); 
+            background-size: cover; 
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 500px; /* Adjust width */
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-row {
+            margin-bottom: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .form-group input, .form-group select {
+            width: 95%;
+            padding: 10px;
+            font-size: 14px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        /* Hover animation */
+        .form-group input:focus, .form-group select:focus {
+            border-color: #4caf50;
+            box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+        }
+
+        .form-group label {
+            position: absolute;
+            top: -8px;
+            left: 10px;
+            background-color: white;
+            padding: 0 5px;
+            font-size: 14px;
+            color: #666;
+            transition: all 0.3s ease;
+        }
+
+        /* Icon Styling */
+        .form-group i {
+            position: absolute;
+            right: 10px;
+            top: 12px;
+            font-size: 18px;
+            color: #999;
+            transition: color 0.3s ease;
+        }
+
+        .form-group input:focus ~ i, .form-group select:focus ~ i {
+            color: #4caf50;
+        }
+
+        .form-row .form-group:hover i {
+            color: #4caf50;
+        }
+
+        .submit-btn {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
